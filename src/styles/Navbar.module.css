@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 60px;
+  position: relative; /* Permite que el logo sobresalga hacia abajo */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute; /* Permite que el logo se superponga al navbar */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta para centrar exactamente */
+  bottom: -70px; /* Ajusta el logo hacia abajo */
+}
+
+.logo img {
+  height: auto;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.whatsappButton {
+  display: block;
+}
+
+.menuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.mobileMenu {
+  background: #f9f9f9;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mobileSocialIcons a,
+.mobileWhatsapp a {
+  display: block;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo img {
+    max-height: 160px;
+  }
+
+  .socialIcons a {
+    font-size: 24px;
+  }
+
+  .whatsappButton a {
+    font-size: 24px;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .socialIcons a,
+  .whatsappButton a {
+    font-size: 20px;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: grid;
+  }
+}
