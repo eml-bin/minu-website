@@ -1,6 +1,9 @@
 .header {
   width: 100%;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -13,15 +16,22 @@
   position: relative; /* Permite que el logo sobresalga hacia abajo */
 }
 
-.left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.left,
+.right {
+  display: none;
 }
 
 .socialIcons {
   display: flex;
   gap: 16px;
+}
+
+.instagramIcon {
+  fill: url(#instagram-gradient);
+}
+
+.facebookIcon {
+  fill: #1877f2 !important;
 }
 
 .center {
@@ -31,28 +41,48 @@
   position: absolute; /* Permite que el logo se superponga al navbar */
   left: 50%; /* Centra horizontalmente */
   transform: translateX(-50%); /* Ajusta para centrar exactamente */
-  bottom: -70px; /* Ajusta el logo hacia abajo */
+  bottom: -60px; /* Ajusta el logo hacia abajo */
 }
 
 .logo img {
+  min-height: 130px;
   height: auto;
 }
 
-.right {
+.whatsappButton {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 16px;
 }
 
-.whatsappButton {
-  display: block;
+.whatsappButton:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsappIcon {
+  font-size: 24px;
 }
 
 .menuToggle {
+  display: block;
   background: none;
   border: none;
   cursor: pointer;
-  display: block;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menuToggle:hover {
+  color: #666;
 }
 
 .mobileMenu {
@@ -68,13 +98,28 @@
   display: block;
   padding: 8px 0;
   color: #333;
-  text-decoration: none;
   font-size: 16px;
 }
 
 @media (min-width: 768px) {
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
   .navbar {
     height: 80px;
+  }
+
+  .center {
+    bottom: -70px;
   }
 
   .logo img {
@@ -83,6 +128,7 @@
 
   .socialIcons a {
     font-size: 24px;
+    display: inline-block;
   }
 
   .whatsappButton a {
