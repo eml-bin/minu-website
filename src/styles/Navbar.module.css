@@ -4,6 +4,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .navbar {
@@ -28,6 +30,10 @@
 
 .instagramIcon {
   fill: url(#instagram-gradient);
+}
+
+.instagramMobileIcon {
+  fill: url(#instagram-mobile-gradient);
 }
 
 .facebookIcon {
@@ -88,17 +94,22 @@
 .mobileMenu {
   background: #f9f9f9;
   padding: 16px;
+  padding-top: 5vh;
   display: grid;
   gap: 12px;
   border-bottom: 1px solid #ccc;
 }
 
-.mobileSocialIcons a,
-.mobileWhatsapp a {
-  display: block;
-  padding: 8px 0;
-  color: #333;
-  font-size: 16px;
+.mobileSocialIcons,
+.mobileWhatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileSocialIcons {
+  gap: 30px;
+  font-size: 25px;
 }
 
 @media (min-width: 768px) {
