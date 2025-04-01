@@ -15,7 +15,8 @@
   align-items: center;
   padding: 0 16px;
   height: 60px;
-  position: relative; /* Permite que el logo sobresalga hacia abajo */
+  position: relative;
+  z-index: 10;
 }
 
 .left,
@@ -52,8 +53,13 @@
 
 .logo img {
   min-height: 130px;
-  height: auto;
+  height: 40px;
 }
+
+/* .socialIcons a,
+.whatsappButton a {
+  font-size: 20px;
+} */
 
 .whatsappButton {
   display: flex;
@@ -84,7 +90,9 @@
   cursor: pointer;
   font-size: 24px;
   color: #333;
-  transition: color 0.3s ease;
+  transition: color 0.75s ease;
+  position: absolute;
+  right: 16px;
 }
 
 .menuToggle:hover {
@@ -93,11 +101,16 @@
 
 .mobileMenu {
   background: #f9f9f9;
-  padding: 16px;
-  padding-top: 5vh;
   display: grid;
   gap: 12px;
   border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.mobileMenu.open {
+  padding: 16px;
+  padding-top: 5vh;
 }
 
 .mobileSocialIcons,
@@ -152,24 +165,5 @@
 
   .mobileMenu {
     display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .logo img {
-    height: 40px;
-  }
-
-  .socialIcons a,
-  .whatsappButton a {
-    font-size: 20px;
-  }
-
-  .menuToggle {
-    display: block;
-  }
-
-  .mobileMenu {
-    display: grid;
   }
 }
