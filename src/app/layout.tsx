@@ -22,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${brandFont.className}`}>
-        <Navbar />
-        <Background>{children}</Background>
+        <Background>
+          <Navbar />
+          {children}
+        </Background>
       </body>
     </html>
   );
