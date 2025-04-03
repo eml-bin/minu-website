@@ -15,7 +15,7 @@ const Background = ({ children }: { children: React.ReactNode }) => {
     <div
       style={{
         backgroundColor: bgColor,
-        height: "100vh",
+        minHeight: "100vh",
         transition: "background-color",
       }}
     >

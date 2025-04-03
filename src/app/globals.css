@@ -35,8 +35,18 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.mainContainer {
+  padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    padding-top: 140px;
   }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }

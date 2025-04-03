@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${brandFont.className}`}>
         <Background>
           <Navbar />
-          {children}
+          <main className={"mainContainer"}>{children}</main>
         </Background>
       </body>
     </html>

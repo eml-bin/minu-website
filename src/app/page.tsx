@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./page.module.css";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   const [productos] = useState([
@@ -22,13 +23,16 @@ export default function Home() {
   ]);
 
   return (
-    <div className={styles.gridContainer}>
-      {productos.map((producto) => (
-        <div key={producto.id} className="card">
-          <h3>{producto.nombre}</h3>
-          <p>{producto.descripcion}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <Carousel />
+      <div className={styles.gridContainer}>
+        {productos.map((producto) => (
+          <div key={producto.id} className="card">
+            <h3>{producto.nombre}</h3>
+            <p>{producto.descripcion}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
