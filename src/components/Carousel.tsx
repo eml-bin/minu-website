@@ -12,7 +12,13 @@ export default function Carousel() {
   return (
     <div className={styles.carouselContainer}>
       <Swiper
-        style={{ height: "100%" }}
+        style={{
+          height: "100%",
+          //  @ts-expect-error
+          "--swiper-navigation-color": "#795e47",
+          "--swiper-navigation-size": "35px",
+          "--swiper-navigation-sides-offset": "20px",
+        }}
         modules={[Navigation, Keyboard, Autoplay]}
         navigation
         keyboard={{ enabled: true }}

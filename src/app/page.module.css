@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding-top: 120px;
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -13,7 +14,6 @@
 @media (min-width: 600px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 150px;
   }
 }
 
