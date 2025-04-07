@@ -1,14 +1,16 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import styles from "@/styles/Carousel.module.css";
+import styles from "@/styles/landing/Promos.module.css";
 import { Navigation, Keyboard, Autoplay } from "swiper/modules";
 import greenImg from "@/assets/green.jpg";
 import pinkImg from "@/assets/pink.jpg";
 import yellowImg from "@/assets/yellow.jpg";
 import Image from "next/image";
 
-export default function Carousel() {
+export default function Promos() {
   return (
     <div className={styles.carouselContainer}>
       <Swiper

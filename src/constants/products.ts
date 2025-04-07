@@ -4,24 +4,24 @@ export const products = [
   {
     id: 1,
     name: "Brownie de Chocolate",
-    category: "brownies",
+    category: "macarons",
     price: 50,
     image: productImg.src,
   },
   {
     id: 2,
     name: "Cheesecake de Fresa",
-    category: "cheesecakes",
+    category: "pasteles",
     price: 70,
     image: productImg.src,
   },
   {
     id: 3,
     name: "Galletas de Chispas",
-    category: "cookies",
+    category: "otros",
     price: 30,
     image: productImg.src,
   },
 ];
 
-export const categories = ["brownies", "cheesecakes", "cookies"];
+export const categories = ["macarons", "pasteles", "otros"];

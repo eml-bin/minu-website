@@ -20,7 +20,7 @@ interface ProductContextType {
 const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 export const ProductProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("brownies");
+  const [selectedCategory, setSelectedCategory] = useState<string>("macarons");
 
   const filteredProducts = products.filter(
     (product) => product.category === selectedCategory

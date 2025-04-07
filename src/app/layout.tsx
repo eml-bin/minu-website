@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
-import Background from "@/components/Background";
-import Navbar from "@/components/Navbar";
+import Background from "@/components/core/Background";
+import Navbar from "@/components/core/Navbar";
 import { LandingProviders } from "@/contexts/LandingProvider";
 
 const brandFont = Zen_Maru_Gothic({
