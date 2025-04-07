@@ -1,13 +1,36 @@
 .carouselContainer {
   width: 100%;
-  max-width: 1200px;
   aspect-ratio: 16/9;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0;
 }
 
-@media (min-width: 1280px) {
+/* @tablets (portrait) */
+@media (min-width: 600px) and (orientation: portrait) {
   .carouselContainer {
-    aspect-ratio: 21/9;
+    aspect-ratio: 16/10;
+  }
+}
+
+/* @mobiles-@tablets (landscape) */
+@media (min-width: 600px) and (orientation: landscape) {
+  .carouselContainer {
+    aspect-ratio: 16/7;
+    max-height: 320px; /* Limit */
+  }
+}
+
+/* @laptoṕs */
+@media (min-width: 900px) {
+  .carouselContainer {
+    aspect-ratio: 16/9;
+    max-height: none;
+  }
+}
+
+/* @monitors */
+@media (min-width: 1200px) {
+  .carouselContainer {
+    aspect-ratio: 16/5; /* Más cinematográfico si querés algo más impactante */
   }
 }

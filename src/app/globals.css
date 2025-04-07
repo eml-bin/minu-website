@@ -1,14 +1,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --tabs-color-tab: white;
+  --tabs-color-tab-hover: #ddd;
+  --tabs-transition-duration: 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {

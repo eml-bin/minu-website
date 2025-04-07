@@ -1,24 +1,25 @@
+/* #Tabs */
+
 .tabs {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
   justify-content: center;
-  gap: 1rem;
   padding: 0.5rem 0;
-  flex-wrap: wrap;
 }
 
 .tabButton {
   background: none;
   border: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
   padding: 0.5rem;
   position: relative;
   transition: color 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .tabButton .icon img {
@@ -41,6 +42,8 @@
   width: 100%;
 }
 
+/* #Products */
+
 .productContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -54,19 +57,31 @@
   margin-right: auto;
 }
 
-@media (min-width: 600px) {
+/* @tablets (portrait) */
+@media (min-width: 600px) and (orientation: portrait) {
+  /* #Products */
   .productContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* @mobiles-@tablets (landscape) */
+@media (min-width: 600px) and (orientation: landscape) {
+  /* #Tabs */
+  .tabs {
+    grid-gap: 5rem;
+  }
+}
+
 @media (min-width: 900px) {
+  /* #Products */
   .productContainer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
+  /* #Products */
   .productContainer {
     grid-template-columns: repeat(5, 1fr);
   }
