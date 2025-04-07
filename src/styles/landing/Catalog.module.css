@@ -1,17 +1,16 @@
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  padding: 1rem 0;
+  gap: 1rem;
+  padding: 0.5rem 0;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
 }
 
 .tabButton {
   background: none;
   border: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   padding: 0.5rem;
@@ -23,7 +22,7 @@
 }
 
 .tabButton .icon img {
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 

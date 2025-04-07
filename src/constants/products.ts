@@ -16,6 +16,13 @@ export const products = [
     image: productImg.src,
   },
   {
+    id: 2,
+    name: "Cheesecake de Fresa",
+    category: "tartas",
+    price: 70,
+    image: productImg.src,
+  },
+  {
     id: 3,
     name: "Galletas de Chispas",
     category: "otros",
@@ -24,4 +31,4 @@ export const products = [
   },
 ];
 
-export const categories = ["macarons", "pasteles", "otros"];
+export const categories = ["macarons", "pasteles", "tartas", "otros"];
