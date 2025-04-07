@@ -2,7 +2,6 @@
 
 import { useProduct } from "@/contexts/ProductContext";
 import { categories } from "@/constants/products";
-import { useState } from "react";
 import styles from "@/styles/landing/Catalog.module.css";
 import macaronsIcon from "@/assets/icons/macarons.png";
 import { capitalize } from "@/utils/text";

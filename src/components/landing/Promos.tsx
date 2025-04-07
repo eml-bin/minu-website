@@ -16,7 +16,7 @@ export default function Promos() {
       <Swiper
         style={{
           height: "100%",
-          //  @ts-expect-error
+          //  @ts-expect-error: Propiedades (--swiper-*) no son reconocidas por TypeScript en este contexto.
           "--swiper-navigation-color": "#795e47",
           "--swiper-navigation-size": "35px",
           "--swiper-navigation-sides-offset": "20px",
