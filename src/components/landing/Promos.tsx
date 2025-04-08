@@ -30,13 +30,13 @@ export default function Promos() {
         slidesPerView={1}
       >
         <SwiperSlide>
-          <Image src={greenImg} alt="Slide 1" style={{ width: "100%" }} />
+          <Image fill src={greenImg} alt="Slide 1" style={{ width: "100%" }} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={pinkImg} alt="Slide 2" style={{ width: "100%" }} />
+          <Image fill src={pinkImg} alt="Slide 2" style={{ width: "100%" }} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={yellowImg} alt="Slide 3" style={{ width: "100%" }} />
+          <Image fill src={yellowImg} alt="Slide 3" style={{ width: "100%" }} />
         </SwiperSlide>
       </Swiper>
     </div>

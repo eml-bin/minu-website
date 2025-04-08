@@ -5,6 +5,8 @@ import { categories } from "@/constants/products";
 import styles from "@/styles/landing/Catalog.module.css";
 import dessertTableIcon from "@/assets/icons/desserttableo1.png";
 import { capitalizeText, getCategoryIcon } from "@/utils/formats";
+import Image from "next/image";
+import { Category } from "@/models/Category";
 
 export default function Catalog() {
   const { selectedCategory, setSelectedCategory, filteredProducts } =
@@ -37,7 +39,7 @@ export default function Catalog() {
           onClick={() => setSelectedCategory("servicios")}
         >
           <div className={styles.icon}>
-            <img src={dessertTableIcon.src} alt="servicios" />
+            <Image fill src={dessertTableIcon.src} alt="servicios" />
           </div>
           <span>Mesas de Postres</span>
         </button>

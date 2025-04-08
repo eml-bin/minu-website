@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack --open",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --ext .ts,.tsx"
   },
   "dependencies": {
     "clsx": "^2.1.1",
