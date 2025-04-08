@@ -3,8 +3,8 @@
 import { useProduct } from "@/contexts/ProductContext";
 import { categories } from "@/constants/products";
 import styles from "@/styles/landing/Catalog.module.css";
-import macaronsIcon from "@/assets/icons/macarons.png";
-import { capitalize } from "@/utils/text";
+import dessertTableIcon from "@/assets/icons/desserttableo1.png";
+import { capitalizeText, getCategoryIcon } from "@/utils/formats";
 
 export default function Catalog() {
   const { selectedCategory, setSelectedCategory, filteredProducts } =
@@ -22,11 +22,25 @@ export default function Catalog() {
             onClick={() => setSelectedCategory(category)}
           >
             <div className={styles.icon}>
-              <img src={macaronsIcon.src} alt={category} />
+              <img src={getCategoryIcon(category as Category)} alt={category} />
             </div>
-            <span>{capitalize(category)}</span>
+            <span>{capitalizeText(category)}</span>
           </button>
         ))}
+
+        <div className={styles.tabsDivider}></div>
+        <button
+          key="servicios"
+          className={`${styles.tabButton} ${
+            selectedCategory === "servicios" ? styles.active : ""
+          }`}
+          onClick={() => setSelectedCategory("servicios")}
+        >
+          <div className={styles.icon}>
+            <img src={dessertTableIcon.src} alt="servicios" />
+          </div>
+          <span>Mesas de Postres</span>
+        </button>
       </div>
       <div className={styles.productContainer}>
         {filteredProducts.map((product) => (

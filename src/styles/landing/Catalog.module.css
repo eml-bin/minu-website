@@ -3,19 +3,27 @@
 .tabs {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   justify-content: center;
   padding: 0.5rem 0;
+  align-items: center;
+}
+
+.tabsDivider {
+  width: 1px;
+  height: 3rem;
+  background-color: white;
+  opacity: 0.5;
 }
 
 .tabButton {
   background: none;
   border: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.1rem;
   position: relative;
   transition: color 0.3s;
   display: grid;
@@ -25,6 +33,7 @@
 .tabButton .icon img {
   width: 50px;
   height: auto;
+  margin-bottom: 0.1rem;
 }
 
 .tabButton::after {
@@ -59,10 +68,13 @@
 
 /* @tablets (portrait) */
 @media (min-width: 600px) and (orientation: portrait) {
-  /* #Products */
-  .productContainer {
-    grid-template-columns: repeat(3, 1fr);
+  .tabs {
+    grid-gap: 3rem;
   }
+  /* #Products */
+  /* .productContainer {
+    grid-template-columns: repeat(3, 1fr);
+  } */
 }
 
 /* @mobiles-@tablets (landscape) */
@@ -75,14 +87,8 @@
 
 @media (min-width: 900px) {
   /* #Products */
-  .productContainer {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 @media (min-width: 1200px) {
   /* #Products */
-  .productContainer {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
