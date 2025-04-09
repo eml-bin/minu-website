@@ -1,7 +1,7 @@
 import macaronsIcon from "@/assets/icons/macarons.png";
-import cakesIcon from "@/assets/icons/cakes.png";
-import paysIcon from "@/assets/icons/pays.png";
-import othersIcon from "@/assets/icons/others.png";
+import cakesIcon from "@/assets/icons/pasteles.png";
+import paysIcon from "@/assets/icons/tartas.png";
+import othersIcon from "@/assets/icons/otros.png";
 
 export const capitalizeText = (text: string) => {
   return text.charAt(0).toUpperCase() + text.slice(1);

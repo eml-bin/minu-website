@@ -6,7 +6,6 @@ import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import styles from "@/styles/core/Navbar.module.css";
-import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,7 +52,7 @@ const Navbar = () => {
 
         <div className={styles.center}>
           <div className={styles.logo}>
-            <Image fill src="/logo.svg" alt="Logo" />
+            <img src="/logo.svg" alt="Logo" />
           </div>
         </div>
 
