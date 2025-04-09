@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack --open",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --ext .ts,.tsx"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -14,7 +14,8 @@
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
