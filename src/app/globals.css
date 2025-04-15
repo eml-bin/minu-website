@@ -1,9 +1,14 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --tabs-color-tab: white;
-  --tabs-color-tab-hover: #ddd;
-  --tabs-transition-duration: 0.3s;
+  --foreground: #332214;
+
+  /* Tabs */
+  --minu-brown-color: #332214;
+  --minu-green-color: #aafab4;
+  --minu-pink-color: #ffa8a8;
+  --minu-blue-color: #a3cde7;
+  --minu-yellow-color: #eed999;
+  --minu-orange-color: #ffe3cc;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -35,6 +40,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 .mainContainer {

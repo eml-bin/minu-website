@@ -54,6 +54,7 @@
 .logo img {
   min-height: 130px;
   height: 40px;
+  filter: drop-shadow(1px 1px 0px black);
 }
 
 /* .socialIcons a,
@@ -148,6 +149,7 @@
 
   .logo img {
     max-height: 160px;
+    filter: drop-shadow(1px 1px 0px black);
   }
 
   .socialIcons a {

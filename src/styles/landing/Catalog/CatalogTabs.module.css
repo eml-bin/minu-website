@@ -1,0 +1,126 @@
+.tabs {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+
+.tabsDivider {
+  width: 1.5px;
+  height: 7vh;
+  opacity: 0.75;
+  background-color: var(--minu-brown-color);
+  opacity: 0.5;
+}
+
+.tabButton {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+  padding: 0.5rem;
+}
+
+.tabButton .icon {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabButton .icon img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.tabButton span {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--minu-brown-color);
+}
+
+.tabButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--minu-brown-color);
+  transition: width 0.3s ease;
+  opacity: 0.5;
+}
+
+.tabButton.active::after {
+  width: 100%;
+}
+
+.tabButton.active .icon img {
+  filter: drop-shadow(2px 2px 3px var(--minu-brown-color));
+}
+
+/* @tablets (portrait) */
+@media (min-width: 600px) and (orientation: portrait) {
+  .tabs {
+    padding-top: 2vh;
+    grid-gap: 2rem;
+    justify-content: center;
+  }
+
+  .tabButton {
+    font-size: 1.2rem;
+  }
+
+  .tabButton .icon img {
+    width: 90px;
+  }
+
+  .tabButton span {
+    letter-spacing: 1.5px;
+  }
+}
+
+/* @mobiles-@tablets (landscape) */
+@media (min-width: 600px) and (orientation: landscape) {
+  .tabs {
+    padding-top: 3vh;
+    grid-gap: 2rem;
+    justify-content: center;
+    overflow-x: auto;
+  }
+}
+
+/* @laptops */
+@media (min-width: 900px) {
+  .tabs {
+    padding-top: 3vh;
+    grid-gap: 2rem;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .tabButton {
+    font-size: 1.2rem;
+  }
+
+  .tabButton .icon img {
+    width: 70px;
+  }
+}
+
+/* @media (min-width: 1200px) {
+} */

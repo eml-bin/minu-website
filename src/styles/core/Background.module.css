@@ -1,0 +1,16 @@
+.background {
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.yellow {
+  background-color: var(--minu-yellow-color);
+}
+
+.green {
+  background-color: var(--minu-green-color);
+}
+
+.orange {
+  background-color: var(--minu-orange-color);
+}
