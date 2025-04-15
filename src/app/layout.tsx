@@ -7,7 +7,7 @@ import { LandingProviders } from "@/contexts/LandingProvider";
 
 const brandFont = Zen_Maru_Gothic({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "900"],
 });
 
 export const metadata: Metadata = {

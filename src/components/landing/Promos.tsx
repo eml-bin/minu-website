@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import styles from "@/styles/landing/Promos.module.css";
 import { Navigation, Keyboard, Autoplay } from "swiper/modules";
-import greenImg from "@/assets/green.jpg";
-import pinkImg from "@/assets/pink.jpg";
-import yellowImg from "@/assets/yellow.jpg";
+import greenImg from "@/assets/tmp/green.jpg";
+import pinkImg from "@/assets/tmp/pink.jpg";
+import yellowImg from "@/assets/tmp/yellow.jpg";
 import Image from "next/image";
 
 export default function Promos() {

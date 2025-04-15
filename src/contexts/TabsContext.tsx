@@ -1,43 +1,44 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";
-import { products } from "@/constants/products";
+import { products } from "@/constants/tmp/products";
 
 interface Product {
   id: number;
   name: string;
   category: string;
   price: number;
-  image: string;
+  description: string;
+  src: string;
 }
 
-interface ProductContextType {
+interface TabsContextType {
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
   filteredProducts: Product[];
 }
 
-const ProductContext = createContext<ProductContextType | undefined>(undefined);
+const TabsContext = createContext<TabsContextType | undefined>(undefined);
 
-export const ProductProvider = ({ children }: { children: ReactNode }) => {
+export const TabsProvider = ({ children }: { children: ReactNode }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("macarons");
 
   const filteredProducts = products.filter(
     (product) => product.category === selectedCategory
   );
   return (
-    <ProductContext.Provider
+    <TabsContext.Provider
       value={{ selectedCategory, setSelectedCategory, filteredProducts }}
     >
       {children}
-    </ProductContext.Provider>
+    </TabsContext.Provider>
   );
 };
 
-export const useProduct = (): ProductContextType => {
-  const context = useContext(ProductContext);
+export const useTabs = (): TabsContextType => {
+  const context = useContext(TabsContext);
   if (!context) {
-    throw new Error("useProduct must be used within a ProductProvider");
+    throw new Error("useTabs must be used within a TabsProvider");
   }
   return context;
 };

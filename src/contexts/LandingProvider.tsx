@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import { ProductProvider } from "./ProductContext";
+import { TabsProvider } from "./TabsContext";
 
 interface ProvidersProps {
   children: ReactNode;
 }
 
 export function LandingProviders({ children }: ProvidersProps) {
-  return <ProductProvider>{children}</ProductProvider>;
+  return <TabsProvider>{children}</TabsProvider>;
 }
