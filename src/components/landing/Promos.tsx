@@ -5,10 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import styles from "@/styles/landing/Promos.module.css";
 import { Navigation, Keyboard, Autoplay } from "swiper/modules";
-import greenImg from "@/assets/tmp/green.jpg";
-import pinkImg from "@/assets/tmp/pink.jpg";
-import yellowImg from "@/assets/tmp/yellow.jpg";
 import Image from "next/image";
+import { PROMO_EXTRA, PROMO_MIDDLE, PROMO_PRINCIPAL } from "@/constants/promos";
 
 export default function Promos() {
   return (
@@ -30,13 +28,28 @@ export default function Promos() {
         slidesPerView={1}
       >
         <SwiperSlide>
-          <Image fill src={greenImg} alt="Slide 1" style={{ width: "100%" }} />
+          <Image
+            fill
+            src={PROMO_PRINCIPAL}
+            alt="Slide 1"
+            style={{ width: "100%" }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image fill src={pinkImg} alt="Slide 2" style={{ width: "100%" }} />
+          <Image
+            fill
+            src={PROMO_MIDDLE}
+            alt="Slide 2"
+            style={{ width: "100%" }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image fill src={yellowImg} alt="Slide 3" style={{ width: "100%" }} />
+          <Image
+            fill
+            src={PROMO_EXTRA}
+            alt="Slide 3"
+            style={{ width: "100%" }}
+          />
         </SwiperSlide>
       </Swiper>
     </div>
