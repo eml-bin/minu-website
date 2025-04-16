@@ -2,13 +2,14 @@
   --background: #ffffff;
   --foreground: #332214;
 
-  /* Tabs */
   --minu-brown-color: #332214;
   --minu-green-color: #aafab4;
   --minu-pink-color: #ffa8a8;
   --minu-blue-color: #a3cde7;
   --minu-yellow-color: #eed999;
   --minu-orange-color: #ffe3cc;
+
+  --navbar-border-color: rgba(204, 204, 204, 0.75);
 }
 
 /* @media (prefers-color-scheme: dark) {

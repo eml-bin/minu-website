@@ -1,15 +1,15 @@
 .header {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--navbar-border-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #fff;
+  background-color: white;
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,16 +45,17 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  position: absolute; /* Permite que el logo se superponga al navbar */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Ajusta para centrar exactamente */
-  bottom: -60px; /* Ajusta el logo hacia abajo */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
 }
 
 .logo img {
-  min-height: 130px;
-  height: 40px;
-  filter: drop-shadow(1px 1px 0px black);
+  max-height: 120px;
+  min-height: 40px;
+  height: 80px;
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.85));
 }
 
 /* .socialIcons a,
@@ -144,12 +145,12 @@
   }
 
   .center {
-    bottom: -70px;
+    bottom: -60px;
   }
 
   .logo img {
-    max-height: 160px;
-    filter: drop-shadow(1px 1px 0px black);
+    height: 120px;
+    filter: drop-shadow(1.5px 1.5px 0px rgba(0, 0, 0, 0.75));
   }
 
   .socialIcons a {
