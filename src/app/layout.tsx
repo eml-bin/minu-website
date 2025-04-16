@@ -13,6 +13,9 @@ const brandFont = Zen_Maru_Gothic({
 export const metadata: Metadata = {
   title: "Minu Repostería",
   description: "Repostería hecha en casa. Irapuato, Guanajuato.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

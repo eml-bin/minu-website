@@ -19,3 +19,11 @@ export const Services: Record<string, TabsInterface> = {
     icon: dessertTableIcon.src,
   },
 };
+
+enum ServicesOptions {
+  DESSERT_TABLE = "dessert_table",
+}
+
+export function isService(value: string): value is ServicesOptions {
+  return Object.values(ServicesOptions).includes(value as ServicesOptions);
+}
