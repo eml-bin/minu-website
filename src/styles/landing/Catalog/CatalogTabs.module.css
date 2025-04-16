@@ -4,10 +4,27 @@
   grid-gap: 1rem;
   justify-content: start;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+}
+
+.tabs::-webkit-scrollbar {
+  height: 6px; /* Scroll horizontal, por eso es height */
+}
+
+.tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.3); /* Gris translúcido */
+  border-radius: 10px;
+  border: none;
 }
 
 .tabsDivider {
@@ -76,7 +93,6 @@
 /* @tablets (portrait) */
 @media (min-width: 600px) and (orientation: portrait) {
   .tabs {
-    padding-top: 2vh;
     grid-gap: 2rem;
     justify-content: center;
   }
