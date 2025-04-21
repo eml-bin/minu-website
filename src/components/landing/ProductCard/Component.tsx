@@ -6,7 +6,6 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import styles from "./ProductCard.module.css";
-import { useRef } from "react";
 
 type ProductCardProps = {
   product: Product;
@@ -14,7 +13,6 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const hasMultiple = product.sources.length > 1;
-  const paginationRef = useRef<HTMLDivElement>(null);
   return (
     <div className={styles.card}>
       <div className={styles.carouselWrapper}>
