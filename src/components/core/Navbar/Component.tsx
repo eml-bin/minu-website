@@ -5,7 +5,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import styles from "@/styles/core/Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

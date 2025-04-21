@@ -1,8 +1,8 @@
 .productContainer {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1vh 1vw;
+  gap: 4rem;
+  padding: 5vh 1vw;
   justify-content: center;
   margin: 0 auto;
 }
@@ -54,10 +54,18 @@
   font-weight: 400;
 }
 
+/* @mobiles-@tablets (landscape) */
+@media (min-width: 600px) and (orientation: landscape) {
+  .productContainer {
+    padding: 10vh 5vw;
+  }
+}
+
 /* @tablets (portrait) */
 @media (min-width: 600px) {
   .productContainer {
     grid-template-columns: repeat(2, 1fr);
+    padding: 5vh 5vw;
   }
 }
 

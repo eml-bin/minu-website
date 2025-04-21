@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from "@/styles/core/Background.module.css";
+import styles from "./Background.module.css";
 
 const Background = ({ children }: { children: React.ReactNode }) => {
   const [bgClass, setBgClass] = useState<string>("");

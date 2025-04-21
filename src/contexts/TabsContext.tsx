@@ -2,15 +2,7 @@
 
 import { createContext, useContext, useState, ReactNode } from "react";
 import { products } from "@/constants/tmp/products";
-
-interface Product {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-  description: string;
-  src: string;
-}
+import { Product } from "@/interfaces/Product";
 
 interface TabsContextType {
   selectedCategory: string;
