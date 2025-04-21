@@ -2,15 +2,15 @@
 
 import greenImg from "@/assets/tmp/green.jpg";
 import yellowImg from "@/assets/tmp/yellow.jpg";
-import styles from "@/styles/landing/Catalog/CatalogService.module.css";
-import buttonStyles from "@/styles/core/Navbar.module.css";
+import styles from "./Service.module.css";
+import buttonStyles from "@/components/core/Navbar/Navbar.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 
 // Morbi malesuada dolor eget purus hendrerit aenean. 50
 // Maecenas tristique lacus mauris, facilisis blandit metus viverra ac. Nullam nec. 80
 // Phasellus elementum mauris commodo libero dignissim egestas. Pellentesque dignissim pretium leo eget rhoncus massa nunc. 120
 
-export default function CatalogService() {
+export default function Service() {
   return (
     <section className={styles.serviceContainer}>
       <div className={styles.block}>

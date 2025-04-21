@@ -1,5 +1,5 @@
-import Promos from "@/components/landing/Promos";
-import Catalog from "@/components/landing/Catalog";
+import Promos from "@/components/landing/Promos/Component";
+import Catalog from "@/layout/landing/Catalog/Component";
 
 export const metadata = {
   title: "Minu Repostería",

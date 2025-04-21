@@ -1,0 +1,69 @@
+.carouselWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* el swiper sigue igual */
+.swiper {
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+}
+
+.carouselWrapper :global(.swiper-pagination-bullet-active) {
+  background: var(--minu-pink-color);
+}
+
+.carouselWrapper :global(.swiper-pagination-bullet) {
+  background: var(--minu-orange-color);
+}
+
+.cardImage {
+  width: 100%;
+  padding-top: 100%; /* para mantener ratio cuadrado */
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: swing 1.75s ease-in-out infinite;
+}
+
+.cardImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardInfo {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.cardInfo h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

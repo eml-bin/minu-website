@@ -1,10 +1,10 @@
 "use client";
 
 import { useTabs } from "@/contexts/TabsContext";
-import styles from "@/styles/landing/Catalog/CatalogTabs.module.css";
+import styles from "./Tabs.module.css";
 import { Categories, Services } from "@/constants/tabs";
 
-export default function CatalogTabs() {
+export default function Tabs() {
   const { selectedCategory, setSelectedCategory } = useTabs();
 
   return (
